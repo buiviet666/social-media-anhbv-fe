@@ -1,0 +1,61 @@
+.content {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .accordion {
+    border-bottom: 1px solid #E7E7E7;
+    transition: all 0.5s linear;
+  }
+  
+  .accordion__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    align-items: center;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .accordion__title-main {
+    color: #6F6F6F;
+  }
+  
+  .accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 0;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+  }
+  
+  .accordion__content p {
+    font-size: 18px;
+    color: #5C5C5C;
+    font-weight: 400;
+    line-height: 29px;
+    font-family: "Avenir Next", sans-serif;
+  }
+  
+  .accordion.active .accordion__content {
+    max-height: 500px;
+    padding-bottom: 20px;
+  }
+  
+  .accordion__title-icon {
+    color: #ADADAD;
+    font-size: 14px;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .accordion.active .accordion__title-icon {
+    transform: rotate(180deg);
+  }
+  

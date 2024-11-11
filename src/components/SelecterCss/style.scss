@@ -1,0 +1,30 @@
+// <<< "*" >>> tất cả những thằng sau thằng cha sẽ áp dụng css, có kế thừa
+// .father * {
+//     font-size: 21px;
+// }
+
+
+// <<< ">" >>> chỉ những thằng li trong thằng cha mới áp dụng css, có kế thừa
+// .father > li {
+//     color: red;
+// }
+
+
+// <<< "+" >>> chỉ chọn 1 để css và phải bằng cấp + liền kề mới được, không chọn thằng vế trái, không hoạt động ngược
+// #boy + .son1 {
+//     color: blue;
+// }
+
+
+// <<< "~" >>> chọn tất cả phải bằng cấp + không chọn thằng vế trái, không hoạt động ngược
+// #boy ~ .son1 {
+//     color: red;
+// }
+
+
+// chọn thuộc tính
+// .father div[rtx-2080] p {
+//     color: red;
+// }
+
+
